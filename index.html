@@ -1,0 +1,95 @@
+<html>
+<head>
+    <tittle>First Page</tittle>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="style.css"rel="stylesheet">
+    </head>
+<style>
+    body{
+        padding:0;
+        margin: 0;
+    }
+    .navbar{
+        background-color:#0fee1a;
+        display: flex;
+        justify-content: space-between;
+        padding:15px 10px;
+        flex-direction: column;
+    }
+    .list{
+        display:flex;
+        list-style-type: none;
+        gap:40px;
+        text-align: center;
+    }
+    .li{
+        list-style-type: none;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+
+    }
+    #toogle.label{
+        display:none;
+    }
+    @media(max-width:580px){
+        .list{
+            width:100%;
+            flex-direction: column;
+            align-items: left;
+            display: none;
+            padding: 20px;
+        }
+        label{
+            display:block;
+        }
+        #toggle:checked~.list{
+            display:flex;
+        }
+    }
+    .container-fluid{
+        border-color:rgb(240, 234, 234);
+    }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Website</a>
+            <button class="navbar toggle" type="button"data-bs-toggle="collapse"data-bs-target="#navbarNav"aria-controls="navbarNav" area-expanded="">
+              <span class="navbar-toggle-icon"></span>  
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auot">
+                    <li class="nav-item">
+                        <a class="nav-link"href="#services">service</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link"href="#appointment">Visit</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </fieldset>
+    </nav>
+</body>
+<div class="slider-area">
+    <h2 style ="color:black;">Super Bikes</h2>
+    <div class="wrapper">
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (5).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (5).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (6).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (6).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (7).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (7).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (5).jfif"></div>
+        <div class="item"><img alt=""src="C:\Users\student\Downloads\download (5).jfif"></div>
+    </div>
+</html>
